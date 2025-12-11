@@ -1,0 +1,43 @@
+body {
+    background-color: #E5A4CB; /* your pink background */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 60px 0;
+}
+
+/* Center wrapper */
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+/* White rounded box */
+.content-box {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    border: 4px solid #ffdaf1;   /* light pastel border */
+    border-radius: 28px;
+    padding: 85px 40px 55px; 
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlapping logo */
+.logo-container {
+    position: absolute;
+    top: -60px;  /* controls how much the logo overlaps */
+    z-index: 2;
+}
+
+.logo {
+    width: 140px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
