@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chelsea's NPower Portfolio</title>
+  <title>About • Chelsea Portfolio</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <!-- Top Nav -->
   <header class="top-nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">
@@ -20,27 +19,24 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a class="active" href="index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
+        <a class="active" href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
 
-      <!-- Mobile Menu Toggle -->
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile Drawer -->
     <div class="nav-drawer">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+      <a class="active" href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
   </header>
-
 
   <main class="page">
     <div class="header-wrapper">
@@ -49,38 +45,42 @@
       </div>
 
       <div class="content-box">
-        <p class="badge">NPower • Portfolio</p>
-        <h1>Welcome to Chelsea's Portfolio</h1>
-        <p class="subtitle">This is my NPower project showcase!</p>
+        <p class="badge">About Me</p>
+        <h1>Hi, I’m Chelsea 👋</h1>
+        <p class="subtitle">
+          I’m growing my skills through NPower and building projects that blend creativity + tech.
+        </p>
 
-        <div class="quick-grid">
-          <div class="quick-card">
-            <h3>What I’m building</h3>
-            <p>Projects that show my growth in tech — from web to problem solving.</p>
-          </div>
-          <div class="quick-card">
-            <h3>What I’m learning</h3>
-            <p>HTML, CSS, JavaScript + building confidence through practice.</p>
-          </div>
-          <div class="quick-card">
-            <h3>What’s next</h3>
-            <p>More projects, better UI, and a clean portfolio recruiters love.</p>
-          </div>
-        </div>
+        <div class="two-col">
+          <section class="panel">
+            <h2>What I’m into</h2>
+            <ul class="nice-list">
+              <li>Front-end basics (HTML, CSS, JavaScript)</li>
+              <li>Building clean UI with personality</li>
+              <li>Cybersecurity curiosity + learning mindset</li>
+              <li>Games & creative projects</li>
+            </ul>
+          </section>
 
-        <div class="cta-row">
-          <a class="btn primary" href="projects.html">See My Projects</a>
-          <a class="btn ghost" href="contact.html">Contact Me</a>
+          <section class="panel">
+            <h2>Skills I’m practicing</h2>
+            <div class="skill-wrap">
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Git/GitHub</span>
+              <span class="skill">Problem Solving</span>
+              <span class="skill">Teamwork</span>
+            </div>
+          </section>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- JS for mobile nav -->
   <script>
     const toggle = document.querySelector(".nav-toggle");
     const drawer = document.querySelector(".nav-drawer");
-
     toggle.addEventListener("click", () => {
       const expanded = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!expanded));

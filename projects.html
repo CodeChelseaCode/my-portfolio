@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects • Chelsea Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Chelsea</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-drawer">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="header-wrapper">
+      <div class="logo-container">
+        <img src="CLogo.png" alt="Logo" class="logo" />
+      </div>
+
+      <div class="content-box">
+        <p class="badge">My Work</p>
+        <h1>Projects</h1>
+        <p class="subtitle">A few things I’ve built (and I’m adding more soon!).</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Malware Extermination</h3>
+              <span class="pill">C#</span>
+            </div>
+            <p>A game project with NPC cats that teach computer safety tips.</p>
+            <div class="meta">
+              <span>Role: Solo</span>
+              <span>Tools: GitHub</span>
+            </div>
+            <div class="cta-row small">
+              <a class="btn ghost" href="#" aria-disabled="true">Demo (soon)</a>
+              <a class="btn primary" href="#" aria-disabled="true">GitHub (add link)</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Portfolio Website</h3>
+              <span class="pill">HTML/CSS</span>
+            </div>
+            <p>This website! Built with a pastel gamer-girl style and clean UI.</p>
+            <div class="meta">
+              <span>Focus: UI</span>
+              <span>Next: JS features</span>
+            </div>
+            <div class="cta-row small">
+              <a class="btn primary" href="index.html">Home</a>
+              <a class="btn ghost" href="contact.html">Contact</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Next Stop: Abyss of Rot</h3>
+              <span class="pill">Game</span>
+            </div>
+            <p>A choice-driven horror survival concept set in the player’s house.</p>
+            <div class="meta">
+              <span>Genre: Horror</span>
+              <span>Status: Concept</span>
+            </div>
+            <div class="cta-row small">
+              <a class="btn ghost" href="#" aria-disabled="true">Design doc (soon)</a>
+              <a class="btn ghost" href="#" aria-disabled="true">Build log (soon)</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const drawer = document.querySelector(".nav-drawer");
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      drawer.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
